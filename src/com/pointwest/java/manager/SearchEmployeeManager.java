@@ -9,6 +9,7 @@ import com.pointwest.java.bean.UserSession;
 import com.pointwest.java.dao.SearchEmployeeDao;
 import com.pointwest.java.util.PlsException;
 
+// manager class that handles search employee functionalities and connects the search ui to the dao
 public class SearchEmployeeManager {
 	Logger logger = Logger.getLogger(SearchEmployeeManager.class);
 	public List<Employee> employeeList;
@@ -33,6 +34,7 @@ public class SearchEmployeeManager {
 		}
 
 		logger.info("SearchEmployeeManager > searchEmployee completed");
+		
 		return employeeList;
 	}
 

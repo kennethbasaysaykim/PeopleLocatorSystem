@@ -33,14 +33,9 @@ public class SearchEmployeeDao extends BaseDao {
 		try {
 			connection = getConnection();
 			preparedStatement = connection.prepareStatement(SqlConstant.SQL_USER_LOGIN);
-
-			// conditions the will me be added to the prepared statement
 			preparedStatement.setString(1, inUserSession.getUserName());
 			preparedStatement.setString(2, inUserSession.getPassword());
-
-			// executes the query in the preparedStatement
 			resultSet = preparedStatement.executeQuery();
-			// will get the query result and updates the values of the user session
 
 			if (resultSet.next()) {
 				inUserSession.setUserName(resultSet.getString("username"));
@@ -88,8 +83,8 @@ public class SearchEmployeeDao extends BaseDao {
 		} finally {
 			closeResources(connection, preparedStatement, resultSet);
 		}
-
 		logger.info("SearchEmployeeDao > retriveEmployeeByEmpId conpleted");
+		
 		return employeeList;
 	}
 	
@@ -102,7 +97,6 @@ public class SearchEmployeeDao extends BaseDao {
 			preparedStatement = connection.prepareStatement(SqlConstant.SQL_SEARCH_EMP_BY_NAME);
 			preparedStatement.setString(1, "%" + inEmployeeName + "%");
 			preparedStatement.setString(2, "%" + inEmployeeName + "%");
-			
 			logger.info("Modified prepared statement: " + preparedStatement);
 			resultSet = preparedStatement.executeQuery();
 			employeeList = new ArrayList<Employee>();
@@ -120,8 +114,8 @@ public class SearchEmployeeDao extends BaseDao {
 		} finally {
 			closeResources(connection, preparedStatement, resultSet);
 		}
-
 		logger.info("SearchEmployeeDao > retrieveEmployeeByName conpleted");
+		
 		return employeeList;
 	}
 	
@@ -150,14 +144,15 @@ public class SearchEmployeeDao extends BaseDao {
 		} finally {
 			closeResources(connection, preparedStatement, resultSet);
 		}
-
 		logger.info("SearchEmployeeDao > retrieveEmployeeByProject conpleted");
+		
 		return employeeList;
 	}
 	
 	// function that will read through all the result set values and will populate the employee list
 	public void generateResultList(ResultSet inResultSet) throws PlsException {
 		logger.info("SearchEmployeeDao > generateResultList started");
+		
 		try {
 			while (inResultSet.next()) {
 				
@@ -178,7 +173,6 @@ public class SearchEmployeeDao extends BaseDao {
 				seat.setColumnNumber(resultSet.getString("column_number"));
 				
 				//determines if local number is empty
-				System.out.println("local: " + resultSet.getString("local_number"));
 				if(resultSet.getString("local_number").length() > 0){
 					seat.setLocalNumber(resultSet.getString("local_number"));
 				}else {

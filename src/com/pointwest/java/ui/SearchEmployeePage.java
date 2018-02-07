@@ -65,7 +65,7 @@ public class SearchEmployeePage implements Menu {
 	}
 	
 	// function that will display the search page search results
-	public void displaySearchResult(List<Employee> employeeList) {
+	public void displaySearchResult(List<Employee> employeeList, UserSession session) {
 		System.out.println("\n## SEARCH RESULT - (" + employeeList.size() + ") ##");
 		System.out.println("+------------------------------------------------------------------------------------------------------------------------------------------+");
 		System.out.printf("| %-6s | %-12s | %-20s | %-20s | %-13s | %-10s | %-10s | %-24s |\n", "INDEX","EMPLOYEE ID","FIRSTNAME", "LASTNAME", "SEAT", "LOCAL", "SHIFT", "PROJECT(S)");

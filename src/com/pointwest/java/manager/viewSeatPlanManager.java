@@ -1,15 +1,12 @@
 package com.pointwest.java.manager;
-
-import java.util.List;
 import java.util.Map;
-
 import org.apache.log4j.Logger;
-
 import com.pointwest.java.bean.Employee;
 import com.pointwest.java.bean.UserSession;
 import com.pointwest.java.dao.ViewSeatPlanDao;
 import com.pointwest.java.util.PlsException;
 
+//manager class that handles the view seats functionalities and connects the view seat ui to the dao
 public class viewSeatPlanManager {
 	Logger logger = Logger.getLogger(viewSeatPlanManager.class);
 	Map<String, Employee> employeeSeatMap;
@@ -28,6 +25,7 @@ public class viewSeatPlanManager {
 				break;
 		}
 		logger.info("viewSeatPlanManager > viewSeatPlan compelted");
+		
 		return employeeSeatMap;
 	}
 

@@ -1,254 +1,190 @@
-[com.pointwest.java.manager.UserManager method:loginUser 18:59:09,637] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 18:59:09,641] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 18:59:09,641] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 18:59:09,875] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 18:59:09,884] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 18:59:09,885] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 18:59:09,885] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 18:59:09,885] - Line 25 - Login Failed. Username input: dexter.Bobis
-[com.pointwest.java.manager.UserManager method:loginUser 18:59:09,885] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 18:59:16,934] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 18:59:16,935] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 18:59:16,935] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 18:59:16,939] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 18:59:16,940] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 18:59:16,941] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 18:59:16,941] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 18:59:16,941] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 18:59:16,941] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:01:07,013] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:01:07,017] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:01:07,017] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:01:07,262] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:01:07,272] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:01:07,273] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:01:07,274] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:01:07,274] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 19:01:07,274] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:01:09,097] - Line 17 - SearchEmployeeManager > searchEmployee started
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:01:09,097] - Line 68 - SearchEmployeeDao > retriveEmployeeByEmpId started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:01:09,098] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:01:09,102] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:01:09,102] - Line 74 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@53bd815b: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE emp.emp_id LIKE '%1%' GROUP BY emp.emp_id, seat.bldg_id
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:01:09,105] - Line 160 - SearchEmployeeDao > generateResultList started
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:01:09,112] - Line 215 - SearchEmployeeDao > generateResultList completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:01:09,112] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:01:09,112] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:01:09,113] - Line 92 - SearchEmployeeDao > retriveEmployeeByEmpId conpleted
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:01:09,113] - Line 35 - SearchEmployeeManager > searchEmployee completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:05:32,176] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:05:32,180] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:05:32,181] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:05:32,425] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:05:32,434] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:05:32,435] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:05:32,436] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:05:32,436] - Line 25 - Login Failed. Username input: dexter.hotel
-[com.pointwest.java.manager.UserManager method:loginUser 19:05:32,436] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:05:38,808] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:05:38,808] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:05:38,808] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:05:38,813] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:05:38,815] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:05:38,815] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:05:38,815] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:05:38,815] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 19:05:38,816] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:07:36,260] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:07:36,260] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:07:36,260] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:07:36,267] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:07:36,268] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:07:36,269] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:07:36,269] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:07:36,269] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 19:07:36,269] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 19:08:05,320] - Line 18 - viewSeatPlanManager > viewSeatPlan started
-[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByQuadrant 19:08:05,321] - Line 60 - ViewSeatPlanDao > retrieveSeatByQuadrant started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:08:05,321] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:08:05,325] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByQuadrant 19:08:05,326] - Line 68 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@48cf768c: SELECT seat.seat_id, emp.first_name, emp.last_name, seat.bldg_id, loc.bldg_address, seat.floor_number, seat.quadrant, seat.row_number, seat.column_number, seat.local_number FROM seat seat  LEFT JOIN location loc on seat.bldg_id = loc.bldg_id  LEFT JOIN employee_seat empSeat on seat.seat_id = empSeat.seat_id  LEFT JOIN employee emp on empSeat.emp_id = emp.emp_id  WHERE seat.bldg_id LIKE 'PTC' AND seat.floor_number LIKE '12' AND seat.quadrant LIKE 'A' GROUP BY seat.seat_id ORDER BY seat.quadrant, seat.row_number, seat.column_number
-[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 19:08:05,327] - Line 90 - ViewSeatPlanDao > generateResultList started
-[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 19:08:05,331] - Line 128 - ViewSeatPlanDao > generateResultList completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:08:05,331] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:08:05,331] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByQuadrant 19:08:05,331] - Line 84 - ViewSeatPlanDao > retrieveSeatByQuadrant completed
-[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 19:08:05,332] - Line 30 - viewSeatPlanManager > viewSeatPlan compelted
-[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 19:08:34,959] - Line 18 - viewSeatPlanManager > viewSeatPlan started
-[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 19:08:34,960] - Line 31 - ViewSeatPlanDao > retrieveSeatByFloor started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:08:34,960] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:08:34,964] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 19:08:34,965] - Line 38 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@707f7052: SELECT seat.seat_id, emp.first_name, emp.last_name, seat.bldg_id, loc.bldg_address, seat.floor_number, seat.quadrant, seat.row_number, seat.column_number, seat.local_number FROM seat seat  LEFT JOIN location loc on seat.bldg_id = loc.bldg_id  LEFT JOIN employee_seat empSeat on seat.seat_id = empSeat.seat_id  LEFT JOIN employee emp on empSeat.emp_id = emp.emp_id  WHERE seat.bldg_id LIKE 'PTC' AND seat.floor_number LIKE '12'  GROUP BY seat.seat_id ORDER BY seat.quadrant, seat.row_number, seat.column_number
-[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 19:08:34,967] - Line 90 - ViewSeatPlanDao > generateResultList started
-[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 19:08:34,968] - Line 128 - ViewSeatPlanDao > generateResultList completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:08:34,969] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:08:34,969] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 19:08:34,969] - Line 54 - ViewSeatPlanDao > retrieveSeatByFloor completed
-[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 19:08:34,969] - Line 30 - viewSeatPlanManager > viewSeatPlan compelted
-[com.pointwest.java.manager.UserManager method:loginUser 19:09:43,756] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:09:43,757] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:09:43,757] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:09:43,783] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:09:43,785] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:09:43,785] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:09:43,785] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:09:43,785] - Line 25 - Login Failed. Username input: das;lkdmsakl;
-[com.pointwest.java.manager.UserManager method:loginUser 19:09:43,785] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:09:48,497] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:09:48,497] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:09:48,498] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:09:48,502] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:09:48,502] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:09:48,503] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:09:48,503] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:09:48,503] - Line 25 - Login Failed. Username input: %
-[com.pointwest.java.manager.UserManager method:loginUser 19:09:48,503] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:10:01,648] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:10:01,649] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:10:01,649] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:10:01,653] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:10:01,655] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:10:01,656] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:10:01,656] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:10:01,656] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 19:10:01,656] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:10:12,574] - Line 17 - SearchEmployeeManager > searchEmployee started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByName 19:10:12,574] - Line 98 - SearchEmployeeDao > retrieveEmployeeByName started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:10:12,574] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:10:12,578] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByName 19:10:12,579] - Line 106 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@2a3046da: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE emp.first_name LIKE '%BO%' OR emp.last_name LIKE '%BO%' GROUP BY emp.emp_id, seat.bldg_id
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:10:12,580] - Line 160 - SearchEmployeeDao > generateResultList started
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:10:12,581] - Line 215 - SearchEmployeeDao > generateResultList completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:10:12,581] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:10:12,581] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByName 19:10:12,581] - Line 124 - SearchEmployeeDao > retrieveEmployeeByName conpleted
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:10:12,582] - Line 35 - SearchEmployeeManager > searchEmployee completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:13:38,666] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:13:38,670] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:13:38,671] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:13:38,921] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:13:38,933] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:13:38,934] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:13:38,935] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:13:38,935] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 19:13:38,935] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:13:55,795] - Line 17 - SearchEmployeeManager > searchEmployee started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByName 19:13:55,796] - Line 98 - SearchEmployeeDao > retrieveEmployeeByName started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:13:55,796] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:13:55,800] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByName 19:13:55,801] - Line 106 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@53bd815b: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE emp.first_name LIKE '%A%' OR emp.last_name LIKE '%A%' GROUP BY emp.emp_id, seat.bldg_id
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:13:55,803] - Line 160 - SearchEmployeeDao > generateResultList started
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:13:55,811] - Line 216 - SearchEmployeeDao > generateResultList completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:13:55,812] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:13:55,812] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByName 19:13:55,812] - Line 124 - SearchEmployeeDao > retrieveEmployeeByName conpleted
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:13:55,812] - Line 35 - SearchEmployeeManager > searchEmployee completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:14:50,185] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:14:50,189] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:14:50,190] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:14:50,429] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:14:50,438] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:14:50,439] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:14:50,439] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:14:50,439] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 19:14:50,439] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:14:52,566] - Line 17 - SearchEmployeeManager > searchEmployee started
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:14:52,566] - Line 68 - SearchEmployeeDao > retriveEmployeeByEmpId started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:14:52,566] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:14:52,571] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:14:52,572] - Line 74 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@53bd815b: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE emp.emp_id LIKE '%1%' GROUP BY emp.emp_id, seat.bldg_id
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:14:52,575] - Line 160 - SearchEmployeeDao > generateResultList started
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:14:52,584] - Line 216 - SearchEmployeeDao > generateResultList completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:14:52,584] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:14:52,585] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:14:52,585] - Line 92 - SearchEmployeeDao > retriveEmployeeByEmpId conpleted
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:14:52,585] - Line 35 - SearchEmployeeManager > searchEmployee completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:16:07,980] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:16:07,984] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:16:07,985] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:16:08,246] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:16:08,256] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:16:08,257] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:16:08,257] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:16:08,257] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 19:16:08,258] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:16:09,754] - Line 17 - SearchEmployeeManager > searchEmployee started
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:16:09,755] - Line 68 - SearchEmployeeDao > retriveEmployeeByEmpId started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:16:09,755] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:16:09,759] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:16:09,760] - Line 74 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@53bd815b: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE emp.emp_id LIKE '%1%' GROUP BY emp.emp_id, seat.bldg_id
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:16:09,762] - Line 160 - SearchEmployeeDao > generateResultList started
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:16:09,772] - Line 220 - SearchEmployeeDao > generateResultList completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:16:09,772] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:16:09,773] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:16:09,773] - Line 92 - SearchEmployeeDao > retriveEmployeeByEmpId conpleted
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:16:09,773] - Line 35 - SearchEmployeeManager > searchEmployee completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:17:27,058] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:17:27,062] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:17:27,062] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:17:27,305] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:17:27,315] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:17:27,316] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:17:27,317] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:17:27,317] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 19:17:27,317] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:17:28,238] - Line 17 - SearchEmployeeManager > searchEmployee started
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:17:28,239] - Line 68 - SearchEmployeeDao > retriveEmployeeByEmpId started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:17:28,239] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:17:28,244] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:17:28,245] - Line 74 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@53bd815b: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE emp.emp_id LIKE '%1%' GROUP BY emp.emp_id, seat.bldg_id
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:17:28,247] - Line 160 - SearchEmployeeDao > generateResultList started
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:17:28,257] - Line 216 - SearchEmployeeDao > generateResultList completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:17:28,257] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:17:28,257] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:17:28,258] - Line 92 - SearchEmployeeDao > retriveEmployeeByEmpId conpleted
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:17:28,258] - Line 35 - SearchEmployeeManager > searchEmployee completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:17:58,598] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:17:58,604] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:17:58,604] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:17:58,855] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:17:58,863] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:17:58,865] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:17:58,865] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:17:58,865] - Line 25 - Login Failed. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 19:17:58,865] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:18:05,798] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:18:05,799] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:18:05,799] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:18:05,803] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:18:05,804] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:18:05,805] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 19:18:05,805] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 19:18:05,805] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 19:18:05,805] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:18:08,160] - Line 17 - SearchEmployeeManager > searchEmployee started
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:18:08,161] - Line 68 - SearchEmployeeDao > retriveEmployeeByEmpId started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:18:08,161] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 19:18:08,166] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:18:08,167] - Line 74 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@69222c14: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE emp.emp_id LIKE '%1%' GROUP BY emp.emp_id, seat.bldg_id
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:18:08,170] - Line 160 - SearchEmployeeDao > generateResultList started
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 19:18:08,179] - Line 216 - SearchEmployeeDao > generateResultList completed
-[com.pointwest.java.dao.BaseDao method:closeResources 19:18:08,179] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 19:18:08,179] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 19:18:08,179] - Line 92 - SearchEmployeeDao > retriveEmployeeByEmpId conpleted
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 19:18:08,180] - Line 35 - SearchEmployeeManager > searchEmployee completed
-[com.pointwest.java.manager.UserManager method:loginUser 20:35:26,655] - Line 13 - UserManager > loginUser started
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 20:35:26,659] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
-[com.pointwest.java.dao.BaseDao method:getConnection 20:35:26,659] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 20:35:26,895] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.BaseDao method:closeResources 20:35:26,912] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 20:35:26,913] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 20:35:26,913] - Line 64 - SearchEmployeeDao > retrieveSystemUser completed
-[com.pointwest.java.manager.UserManager method:loginUser 20:35:26,913] - Line 22 - Login Successful. Username input: dexter.bobis
-[com.pointwest.java.manager.UserManager method:loginUser 20:35:26,913] - Line 27 - UserManager > loginUser completed
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 20:35:31,235] - Line 17 - SearchEmployeeManager > searchEmployee started
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 20:35:31,235] - Line 68 - SearchEmployeeDao > retriveEmployeeByEmpId started
-[com.pointwest.java.dao.BaseDao method:getConnection 20:35:31,235] - Line 21 - BaeDao > getConnection started
-[com.pointwest.java.dao.BaseDao method:getConnection 20:35:31,238] - Line 41 - BaeDao > getConnection completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 20:35:31,239] - Line 74 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@4926097b: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE emp.emp_id LIKE '%1%' GROUP BY emp.emp_id, seat.bldg_id
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 20:35:31,244] - Line 160 - SearchEmployeeDao > generateResultList started
-[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 20:35:31,250] - Line 216 - SearchEmployeeDao > generateResultList completed
-[com.pointwest.java.dao.BaseDao method:closeResources 20:35:31,250] - Line 47 - BaeDao > closeResources started
-[com.pointwest.java.dao.BaseDao method:closeResources 20:35:31,250] - Line 66 - BaeDao > closeResources completed
-[com.pointwest.java.dao.SearchEmployeeDao method:retriveEmployeeByEmpId 20:35:31,250] - Line 92 - SearchEmployeeDao > retriveEmployeeByEmpId conpleted
-[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 20:35:31,251] - Line 35 - SearchEmployeeManager > searchEmployee completed
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:28:38,250] - Line 18 - SearchEmployeeManager > searchEmployee started
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:28:38,250] - Line 124 - SearchEmployeeDao > retrieveEmployeeByProject started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:28:38,250] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:28:38,257] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:28:38,259] - Line 130 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@555590: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE proj.proj_name LIKE '%S%' GROUP BY emp.emp_id, seat.bldg_id
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:28:38,261] - Line 154 - SearchEmployeeDao > generateResultList started
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:28:38,263] - Line 211 - SearchEmployeeDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:28:38,263] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:28:38,263] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:28:38,264] - Line 147 - SearchEmployeeDao > retrieveEmployeeByProject conpleted
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:28:38,264] - Line 36 - SearchEmployeeManager > searchEmployee completed
+[com.pointwest.java.manager.UserManager method:loginUser 21:40:23,574] - Line 14 - UserManager > loginUser started
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 21:40:23,580] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:40:23,580] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:40:23,777] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:40:23,785] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:40:23,786] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 21:40:23,786] - Line 59 - SearchEmployeeDao > retrieveSystemUser completed
+[com.pointwest.java.manager.UserManager method:loginUser 21:40:23,786] - Line 22 - Login Successful. Username input: dexter.bobis
+[com.pointwest.java.manager.UserManager method:loginUser 21:40:23,786] - Line 27 - UserManager > loginUser completed
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:40:27,651] - Line 18 - SearchEmployeeManager > searchEmployee started
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:40:27,651] - Line 124 - SearchEmployeeDao > retrieveEmployeeByProject started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:40:27,651] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:40:27,657] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:40:27,658] - Line 130 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@4926097b: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE proj.proj_name LIKE '%S%' AND proj.proj_name NOT like 'Project Never Exist' GROUP BY emp.emp_id, seat.bldg_id
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:40:27,661] - Line 154 - SearchEmployeeDao > generateResultList started
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:40:27,667] - Line 210 - SearchEmployeeDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:40:27,667] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:40:27,667] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:40:27,668] - Line 147 - SearchEmployeeDao > retrieveEmployeeByProject conpleted
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:40:27,668] - Line 36 - SearchEmployeeManager > searchEmployee completed
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:41:49,747] - Line 18 - SearchEmployeeManager > searchEmployee started
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:41:49,747] - Line 124 - SearchEmployeeDao > retrieveEmployeeByProject started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:41:49,747] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:41:49,753] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:41:49,754] - Line 130 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@33833882: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE proj.proj_name LIKE '%PP%' AND proj.proj_name NOT like 'Project Never Exist' GROUP BY emp.emp_id, seat.bldg_id
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:41:49,755] - Line 154 - SearchEmployeeDao > generateResultList started
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:41:49,757] - Line 210 - SearchEmployeeDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:41:49,757] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:41:49,757] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:41:49,757] - Line 147 - SearchEmployeeDao > retrieveEmployeeByProject conpleted
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:41:49,757] - Line 36 - SearchEmployeeManager > searchEmployee completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:42:28,315] - Line 15 - viewSeatPlanManager > viewSeatPlan started
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByQuadrant 21:42:28,317] - Line 62 - ViewSeatPlanDao > retrieveSeatByQuadrant started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:42:28,317] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:42:28,324] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByQuadrant 21:42:28,324] - Line 70 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@512ddf17: SELECT seat.seat_id, emp.first_name, emp.last_name, seat.bldg_id, loc.bldg_address, seat.floor_number, seat.quadrant, seat.row_number, seat.column_number, seat.local_number FROM seat seat  LEFT JOIN location loc on seat.bldg_id = loc.bldg_id  LEFT JOIN employee_seat empSeat on seat.seat_id = empSeat.seat_id  LEFT JOIN employee emp on empSeat.emp_id = emp.emp_id  WHERE seat.bldg_id LIKE 'PLC' AND seat.floor_number LIKE '9' AND seat.quadrant LIKE 'A' GROUP BY seat.seat_id ORDER BY seat.quadrant, seat.row_number, seat.column_number
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:42:28,326] - Line 93 - ViewSeatPlanDao > generateResultList started
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:42:28,327] - Line 131 - ViewSeatPlanDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:42:28,327] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:42:28,327] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByQuadrant 21:42:28,327] - Line 86 - ViewSeatPlanDao > retrieveSeatByQuadrant completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:42:28,328] - Line 27 - viewSeatPlanManager > viewSeatPlan compelted
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:42:40,618] - Line 15 - viewSeatPlanManager > viewSeatPlan started
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByQuadrant 21:42:40,618] - Line 62 - ViewSeatPlanDao > retrieveSeatByQuadrant started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:42:40,618] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:42:40,624] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByQuadrant 21:42:40,624] - Line 70 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@12bb4df8: SELECT seat.seat_id, emp.first_name, emp.last_name, seat.bldg_id, loc.bldg_address, seat.floor_number, seat.quadrant, seat.row_number, seat.column_number, seat.local_number FROM seat seat  LEFT JOIN location loc on seat.bldg_id = loc.bldg_id  LEFT JOIN employee_seat empSeat on seat.seat_id = empSeat.seat_id  LEFT JOIN employee emp on empSeat.emp_id = emp.emp_id  WHERE seat.bldg_id LIKE 'PLC' AND seat.floor_number LIKE '9' AND seat.quadrant LIKE 'D' GROUP BY seat.seat_id ORDER BY seat.quadrant, seat.row_number, seat.column_number
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:42:40,630] - Line 93 - ViewSeatPlanDao > generateResultList started
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:42:40,631] - Line 131 - ViewSeatPlanDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:42:40,631] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:42:40,632] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByQuadrant 21:42:40,632] - Line 86 - ViewSeatPlanDao > retrieveSeatByQuadrant completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:42:40,632] - Line 27 - viewSeatPlanManager > viewSeatPlan compelted
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:43:02,290] - Line 15 - viewSeatPlanManager > viewSeatPlan started
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:43:02,290] - Line 32 - ViewSeatPlanDao > retrieveSeatByFloor started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:43:02,290] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:43:02,300] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:43:02,300] - Line 39 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@e6ea0c6: SELECT seat.seat_id, emp.first_name, emp.last_name, seat.bldg_id, loc.bldg_address, seat.floor_number, seat.quadrant, seat.row_number, seat.column_number, seat.local_number FROM seat seat  LEFT JOIN location loc on seat.bldg_id = loc.bldg_id  LEFT JOIN employee_seat empSeat on seat.seat_id = empSeat.seat_id  LEFT JOIN employee emp on empSeat.emp_id = emp.emp_id  WHERE seat.bldg_id LIKE 'PTC' AND seat.floor_number LIKE '12'  GROUP BY seat.seat_id ORDER BY seat.quadrant, seat.row_number, seat.column_number
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:43:02,302] - Line 93 - ViewSeatPlanDao > generateResultList started
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:43:02,302] - Line 131 - ViewSeatPlanDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:43:02,302] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:43:02,302] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:43:02,303] - Line 55 - ViewSeatPlanDao > retrieveSeatByFloor completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:43:02,303] - Line 27 - viewSeatPlanManager > viewSeatPlan compelted
+[com.pointwest.java.manager.UserManager method:loginUser 21:44:44,190] - Line 14 - UserManager > loginUser started
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 21:44:44,195] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:44:44,196] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:44:44,394] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:44:44,402] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:44:44,403] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 21:44:44,403] - Line 59 - SearchEmployeeDao > retrieveSystemUser completed
+[com.pointwest.java.manager.UserManager method:loginUser 21:44:44,403] - Line 22 - Login Successful. Username input: dexter.bobis
+[com.pointwest.java.manager.UserManager method:loginUser 21:44:44,403] - Line 27 - UserManager > loginUser completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:44:52,274] - Line 15 - viewSeatPlanManager > viewSeatPlan started
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:44:52,274] - Line 32 - ViewSeatPlanDao > retrieveSeatByFloor started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:44:52,276] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:44:52,279] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:44:52,279] - Line 39 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@4926097b: SELECT seat.seat_id, emp.first_name, emp.last_name, seat.bldg_id, loc.bldg_address, seat.floor_number, seat.quadrant, seat.row_number, seat.column_number, seat.local_number FROM seat seat  LEFT JOIN location loc on seat.bldg_id = loc.bldg_id  LEFT JOIN employee_seat empSeat on seat.seat_id = empSeat.seat_id  LEFT JOIN employee emp on empSeat.emp_id = emp.emp_id  WHERE seat.bldg_id LIKE 'PTC' AND seat.floor_number LIKE '12'  GROUP BY seat.seat_id ORDER BY seat.quadrant, seat.row_number, seat.column_number
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:44:52,282] - Line 93 - ViewSeatPlanDao > generateResultList started
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:44:52,285] - Line 131 - ViewSeatPlanDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:44:52,285] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:44:52,286] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:44:52,286] - Line 55 - ViewSeatPlanDao > retrieveSeatByFloor completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:44:52,286] - Line 27 - viewSeatPlanManager > viewSeatPlan compelted
+[com.pointwest.java.manager.UserManager method:loginUser 21:45:22,389] - Line 14 - UserManager > loginUser started
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 21:45:22,393] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:45:22,393] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:45:22,588] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:45:22,596] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:45:22,597] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 21:45:22,597] - Line 59 - SearchEmployeeDao > retrieveSystemUser completed
+[com.pointwest.java.manager.UserManager method:loginUser 21:45:22,597] - Line 22 - Login Successful. Username input: dexter.bobis
+[com.pointwest.java.manager.UserManager method:loginUser 21:45:22,597] - Line 27 - UserManager > loginUser completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:45:29,787] - Line 15 - viewSeatPlanManager > viewSeatPlan started
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:45:29,788] - Line 32 - ViewSeatPlanDao > retrieveSeatByFloor started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:45:29,789] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:45:29,792] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:45:29,793] - Line 39 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@4926097b: SELECT seat.seat_id, emp.first_name, emp.last_name, seat.bldg_id, loc.bldg_address, seat.floor_number, seat.quadrant, seat.row_number, seat.column_number, seat.local_number FROM seat seat  LEFT JOIN location loc on seat.bldg_id = loc.bldg_id  LEFT JOIN employee_seat empSeat on seat.seat_id = empSeat.seat_id  LEFT JOIN employee emp on empSeat.emp_id = emp.emp_id  WHERE seat.bldg_id LIKE 'PTC' AND seat.floor_number LIKE '12'  GROUP BY seat.seat_id ORDER BY seat.quadrant, seat.row_number, seat.column_number
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:45:29,795] - Line 93 - ViewSeatPlanDao > generateResultList started
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:45:29,798] - Line 131 - ViewSeatPlanDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:45:29,798] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:45:29,799] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:45:29,799] - Line 55 - ViewSeatPlanDao > retrieveSeatByFloor completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:45:29,799] - Line 27 - viewSeatPlanManager > viewSeatPlan compelted
+[com.pointwest.java.manager.UserManager method:loginUser 21:46:09,653] - Line 14 - UserManager > loginUser started
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 21:46:09,656] - Line 31 - SearchEmployeeDao > retrieveSystemUser started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:46:09,656] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:46:09,854] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:46:09,862] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:46:09,863] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveSystemUser 21:46:09,863] - Line 59 - SearchEmployeeDao > retrieveSystemUser completed
+[com.pointwest.java.manager.UserManager method:loginUser 21:46:09,863] - Line 22 - Login Successful. Username input: dexter.bobis
+[com.pointwest.java.manager.UserManager method:loginUser 21:46:09,863] - Line 27 - UserManager > loginUser completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:46:20,779] - Line 15 - viewSeatPlanManager > viewSeatPlan started
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:46:20,781] - Line 32 - ViewSeatPlanDao > retrieveSeatByFloor started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:46:20,781] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:46:20,785] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:46:20,785] - Line 39 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@4926097b: SELECT seat.seat_id, emp.first_name, emp.last_name, seat.bldg_id, loc.bldg_address, seat.floor_number, seat.quadrant, seat.row_number, seat.column_number, seat.local_number FROM seat seat  LEFT JOIN location loc on seat.bldg_id = loc.bldg_id  LEFT JOIN employee_seat empSeat on seat.seat_id = empSeat.seat_id  LEFT JOIN employee emp on empSeat.emp_id = emp.emp_id  WHERE seat.bldg_id LIKE 'PIC' AND seat.floor_number LIKE '12'  GROUP BY seat.seat_id ORDER BY seat.quadrant, seat.row_number, seat.column_number
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:46:20,786] - Line 93 - ViewSeatPlanDao > generateResultList started
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:46:20,787] - Line 131 - ViewSeatPlanDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:46:20,787] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:46:20,787] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:46:20,787] - Line 55 - ViewSeatPlanDao > retrieveSeatByFloor completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:46:20,787] - Line 27 - viewSeatPlanManager > viewSeatPlan compelted
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:46:43,801] - Line 15 - viewSeatPlanManager > viewSeatPlan started
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:46:43,801] - Line 32 - ViewSeatPlanDao > retrieveSeatByFloor started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:46:43,801] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:46:43,805] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:46:43,806] - Line 39 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@33833882: SELECT seat.seat_id, emp.first_name, emp.last_name, seat.bldg_id, loc.bldg_address, seat.floor_number, seat.quadrant, seat.row_number, seat.column_number, seat.local_number FROM seat seat  LEFT JOIN location loc on seat.bldg_id = loc.bldg_id  LEFT JOIN employee_seat empSeat on seat.seat_id = empSeat.seat_id  LEFT JOIN employee emp on empSeat.emp_id = emp.emp_id  WHERE seat.bldg_id LIKE '??' AND seat.floor_number LIKE '??'  GROUP BY seat.seat_id ORDER BY seat.quadrant, seat.row_number, seat.column_number
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:46:43,806] - Line 93 - ViewSeatPlanDao > generateResultList started
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:46:43,806] - Line 131 - ViewSeatPlanDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:46:43,807] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:46:43,807] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:46:43,807] - Line 55 - ViewSeatPlanDao > retrieveSeatByFloor completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:46:43,807] - Line 27 - viewSeatPlanManager > viewSeatPlan compelted
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:46:55,010] - Line 15 - viewSeatPlanManager > viewSeatPlan started
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:46:55,011] - Line 32 - ViewSeatPlanDao > retrieveSeatByFloor started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:46:55,011] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:46:55,015] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:46:55,016] - Line 39 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@512ddf17: SELECT seat.seat_id, emp.first_name, emp.last_name, seat.bldg_id, loc.bldg_address, seat.floor_number, seat.quadrant, seat.row_number, seat.column_number, seat.local_number FROM seat seat  LEFT JOIN location loc on seat.bldg_id = loc.bldg_id  LEFT JOIN employee_seat empSeat on seat.seat_id = empSeat.seat_id  LEFT JOIN employee emp on empSeat.emp_id = emp.emp_id  WHERE seat.bldg_id LIKE 'PTC' AND seat.floor_number LIKE '12'  GROUP BY seat.seat_id ORDER BY seat.quadrant, seat.row_number, seat.column_number
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:46:55,018] - Line 93 - ViewSeatPlanDao > generateResultList started
+[com.pointwest.java.dao.ViewSeatPlanDao method:generateResultList 21:46:55,021] - Line 131 - ViewSeatPlanDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:46:55,021] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:46:55,022] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.ViewSeatPlanDao method:retrieveSeatByFloor 21:46:55,022] - Line 55 - ViewSeatPlanDao > retrieveSeatByFloor completed
+[com.pointwest.java.manager.viewSeatPlanManager method:viewSeatPlan 21:46:55,022] - Line 27 - viewSeatPlanManager > viewSeatPlan compelted
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:47:26,955] - Line 18 - SearchEmployeeManager > searchEmployee started
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:47:26,955] - Line 124 - SearchEmployeeDao > retrieveEmployeeByProject started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:47:26,955] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:47:26,962] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:47:26,962] - Line 130 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@12bb4df8: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE proj.proj_name LIKE '%??%' AND proj.proj_name NOT like 'Project Never Exist' GROUP BY emp.emp_id, seat.bldg_id
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:47:26,963] - Line 154 - SearchEmployeeDao > generateResultList started
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:47:26,964] - Line 210 - SearchEmployeeDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:47:26,964] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:47:26,964] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:47:26,967] - Line 147 - SearchEmployeeDao > retrieveEmployeeByProject conpleted
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:47:26,967] - Line 36 - SearchEmployeeManager > searchEmployee completed
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:47:30,106] - Line 18 - SearchEmployeeManager > searchEmployee started
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:47:30,107] - Line 124 - SearchEmployeeDao > retrieveEmployeeByProject started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:47:30,107] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:47:30,113] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:47:30,113] - Line 130 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@e6ea0c6: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE proj.proj_name LIKE '%#%' AND proj.proj_name NOT like 'Project Never Exist' GROUP BY emp.emp_id, seat.bldg_id
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:47:30,113] - Line 154 - SearchEmployeeDao > generateResultList started
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:47:30,114] - Line 210 - SearchEmployeeDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:47:30,114] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:47:30,114] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:47:30,114] - Line 147 - SearchEmployeeDao > retrieveEmployeeByProject conpleted
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:47:30,114] - Line 36 - SearchEmployeeManager > searchEmployee completed
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:47:35,642] - Line 18 - SearchEmployeeManager > searchEmployee started
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:47:35,643] - Line 124 - SearchEmployeeDao > retrieveEmployeeByProject started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:47:35,643] - Line 21 - BaeDao > getConnection started
+[com.pointwest.java.dao.BaseDao method:getConnection 21:47:35,648] - Line 41 - BaeDao > getConnection completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:47:35,649] - Line 130 - Modified prepared statement: com.mysql.jdbc.JDBC42PreparedStatement@532760d8: SELECT emp.emp_id, emp.first_name, emp.last_name, seat.bldg_id, seat.floor_number, 'F', seat.quadrant, seat.row_number, '-', seat.column_number, seat.local_number, emp.shift,GROUP_CONCAT(proj.proj_name) as 'project(s)' FROM employee emp LEFT JOIN employee_seat empSeat on emp.emp_id = empSeat.emp_id LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias WHERE proj.proj_name LIKE '%NONE%' AND proj.proj_name NOT like 'Project Never Exist' GROUP BY emp.emp_id, seat.bldg_id
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:47:35,650] - Line 154 - SearchEmployeeDao > generateResultList started
+[com.pointwest.java.dao.SearchEmployeeDao method:generateResultList 21:47:35,650] - Line 210 - SearchEmployeeDao > generateResultList completed
+[com.pointwest.java.dao.BaseDao method:closeResources 21:47:35,650] - Line 48 - BaeDao > closeResources started
+[com.pointwest.java.dao.BaseDao method:closeResources 21:47:35,651] - Line 67 - BaeDao > closeResources completed
+[com.pointwest.java.dao.SearchEmployeeDao method:retrieveEmployeeByProject 21:47:35,651] - Line 147 - SearchEmployeeDao > retrieveEmployeeByProject conpleted
+[com.pointwest.java.manager.SearchEmployeeManager method:searchEmployee 21:47:35,651] - Line 36 - SearchEmployeeManager > searchEmployee completed

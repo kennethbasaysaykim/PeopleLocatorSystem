@@ -44,7 +44,7 @@ public interface SqlConstant {
 				+ " LEFT JOIN seat seat on empSeat.seat_id = seat.seat_id"
 				+ " LEFT JOIN employee_project empProj on emp.emp_id = empProj.employee_id"
 				+ " LEFT JOIN project proj on empProj.proj_alias = proj.proj_alias"
-				+ " WHERE proj.proj_name LIKE ?"
+				+ " WHERE proj.proj_name LIKE ? AND proj.proj_name NOT like 'Project Never Exist'"
 				+ " GROUP BY emp.emp_id, seat.bldg_id";	
 	
 	public final static String SQL_VIEW_SEATPLAN_BY_FLOOR = 

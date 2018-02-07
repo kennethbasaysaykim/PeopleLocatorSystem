@@ -20,8 +20,10 @@ public class PeopleLocatorSystemMain {
 		UserSession userSession = new UserSession();
 		boolean isTerminated = false;
 
+		// main loop
 		do {
 			
+			// login loop that will end upon valid user login
 			do {
 				// initializes login page UI and displays the login page menu
 				LoginPage loginPage = new LoginPage();
@@ -31,6 +33,7 @@ public class PeopleLocatorSystemMain {
 				loginPage.callLoginManager(userSession);
 			} while (!userSession.isLoggedIn());
 
+			// home page loop that will end when the user decides to log out
 			do {
 				// initializes home page UI and displays the home page menu
 				HomePage homePage = new HomePage();
@@ -44,6 +47,8 @@ public class PeopleLocatorSystemMain {
 				// case for search option
 				case SystemConstant.OPTION_SEARCH_VARIABLE:
 					boolean isEndSearch = false;
+					
+					// search loop that end when the user choose to return to home after performing a search
 					do {
 						
 						// initializes search page UI and displays the search menu
@@ -59,10 +64,12 @@ public class PeopleLocatorSystemMain {
 							employeeList = searchPage.callSearchManager(userSession);
 							
 							if(null != employeeList) {
-								searchPage.displaySearchResult(employeeList);
+								searchPage.displaySearchResult(employeeList, userSession);
 							}
 							
 							boolean isValidOption = false;
+							
+							// search again loop that will end when the user decides to end searching or search again
 							do {
 								searchPage.displayContinueSearchMenu();
 								searchPage.getUserInput(userSession, SystemConstant.MENU_INPUT_HELPER_ID_OPERATION_CONTINUE);
@@ -86,11 +93,15 @@ public class PeopleLocatorSystemMain {
 				// case for view option
 				case SystemConstant.OPTION_VIEW_VARIABLE:
 					boolean isEndView = false;
+					
+					// view seat plan loop that will end when the user decides to go back to home page after viewing seat plan
 					do {
 						ViewSeatPlanPage viewSeatPlanPage = new ViewSeatPlanPage();
 						viewSeatPlanPage.displayHeader(userSession);
 						viewSeatPlanPage.displayMainContent();
 						viewSeatPlanPage.getUserInput(userSession, SystemConstant.MENU_INPUT_HELPER_ID_VIEW_MAIN);
+						
+						// will get the user input for viewing the desired seat plan
 						if(!SystemConstant.OPTION_INVALID_VARIABLE.equalsIgnoreCase(userSession.getViewPageViewByChoice())) {
 							viewSeatPlanPage.displayHeader(userSession);
 							
@@ -117,6 +128,8 @@ public class PeopleLocatorSystemMain {
 								}
 							}
 							boolean isValidOption = false;
+							
+							// view seat plan again loop that will end when user decides to end viewing or go back to home page
 							do {
 								viewSeatPlanPage.displayContinueSearchMenu();
 								viewSeatPlanPage.getUserInput(userSession, SystemConstant.MENU_INPUT_HELPER_ID_OPERATION_CONTINUE);
@@ -136,12 +149,14 @@ public class PeopleLocatorSystemMain {
 						}
 					}while(!isEndView);
 					break;
-
+					
+				// case for logging out
 				case SystemConstant.OPTION_LOGOUT_VARIABLE:
 					userSession.setLoggedIn(false);
 					homePage.displayLogoutMessage();
 					break;
-
+				
+				// case for providing an invalid user input for the home page menu options
 				case SystemConstant.OPTION_INVALID_VARIABLE:
 					homePage.displayInvalidChoiceMessage();
 					break;

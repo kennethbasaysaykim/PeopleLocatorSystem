@@ -19,6 +19,7 @@ import com.pointwest.java.constant.ExceptionConstant;
 import com.pointwest.java.constant.SqlConstant;
 import com.pointwest.java.util.PlsException;
 
+// dao class that handles the employee related search queries
 public class ViewSeatPlanDao extends BaseDao{
 	Logger logger = Logger.getLogger(ViewSeatPlanDao.class);
 	PreparedStatement preparedStatement = null;
@@ -52,6 +53,7 @@ public class ViewSeatPlanDao extends BaseDao{
 			closeResources(connection, preparedStatement, resultSet);
 		}
 		logger.info("ViewSeatPlanDao > retrieveSeatByFloor completed");
+		
 		return employeeSeatMap;
 	}
 	
@@ -82,6 +84,7 @@ public class ViewSeatPlanDao extends BaseDao{
 			closeResources(connection, preparedStatement, resultSet);
 		}
 		logger.info("ViewSeatPlanDao > retrieveSeatByQuadrant completed");
+		
 		return employeeSeatMap;
 	}
 	

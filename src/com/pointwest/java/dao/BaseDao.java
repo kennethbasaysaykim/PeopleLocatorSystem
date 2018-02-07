@@ -39,6 +39,7 @@ public abstract class BaseDao {
 			throw new PlsException(ExceptionConstant.EXCEPTION_ERROR, e);
 		}
 		logger.info("BaeDao > getConnection completed");;
+		
 		return conn;
 	}
 

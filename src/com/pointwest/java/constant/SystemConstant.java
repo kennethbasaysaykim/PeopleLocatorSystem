@@ -12,6 +12,8 @@ public interface SystemConstant {
 	
 	public static final String OPTION_END_VARIABLE = "END";
 	
+	public static final String OPTION_PROJECT_VARIABLE = "PROJECT";
+	
 	public static final String OPTION_VIEW_BY_FLOOR_LEVEL = "FLOOR";
 	
 	public static final String OPTION_VIEW_BY_QUADRANT= "QUADRANT";
@@ -33,12 +35,5 @@ public interface SystemConstant {
 	public static final String MENU_INPUT_HELPER_ID_OPERATION_CONTINUE = "OPERATION_CONTINUE";
 	
 	public static final String MENU_INPUT_HELPER_ID_VIEW_MAIN = "VIEW_MAIN";
-	
-	
-	
-	public static final String MENU_HELPER_ID_LOGIN_MAIasadasdN = "SEARCH_MAIN";
-	public static final String MENU_HELPER_ID_LOGIN_MAIasadsaN = "LOGIN_MAIN";
-	public static final String MENU_HELPER_ID_LOGIN_MAaasdsaIN = "LOGIN_MAIN";
-	
 	
 }

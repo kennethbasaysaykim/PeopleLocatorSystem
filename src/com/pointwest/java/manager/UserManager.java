@@ -6,6 +6,7 @@ import com.pointwest.java.bean.UserSession;
 import com.pointwest.java.dao.SearchEmployeeDao;
 import com.pointwest.java.util.PlsException;
 
+//manager class that handles login functionalities and connects the login ui to the dao
 public class UserManager {
 	Logger logger = Logger.getLogger(UserManager.class);
 	
@@ -14,7 +15,6 @@ public class UserManager {
 		
 		String loginStatus;
 		SearchEmployeeDao employeeDao = new SearchEmployeeDao();
-		
 		employeeDao.retrieveSystemUser(userSession);
 		
 		if(userSession.isLoggedIn()) {
@@ -25,6 +25,7 @@ public class UserManager {
 			logger.info("Login Failed. Username input: " + userSession.getUserName());
 		}
 		logger.info("UserManager > loginUser completed");
+		
 		return loginStatus;
 	}
 }

@@ -170,7 +170,7 @@ public class ViewSeatPlanPage implements Menu {
 			address = inEmployeeSeatMap.get("1-1-A").getSeat().getLocation().getAddress();
 			
 			System.out.println("\n## VIEW SEATPLAN ##\nLOCATION: " + bldgID + " [" + address +  "]" + ", " + "FLOOR: " + floorNumber);
-			System.out.println("+----------------------------- [QUADRANT A] ------------------------------------------------------------------------------- [QUADRANT B] -------------------------------------------------+");
+			System.out.println("+---------------------------------------- [QUADRANT A] ------------------------------------------------------------------------------- [QUADRANT B] --------------------------------------+");
 				
 			for(int rowCounter = 0; rowCounter < 6; rowCounter++) {
 				if(rowCounter < 3) {
@@ -180,7 +180,7 @@ public class ViewSeatPlanPage implements Menu {
 					QuadrantRowCounter = rowCounter - 3;
 					quadrantList = lowerQuadrantList;
 					if(!isSeparatorPrinted) {
-						System.out.println("+----------------------------- [QUADRANT C] ------------------------------------------------------------------------------- [QUADRANT D] -------------------------------------------------+");
+						System.out.println("+---------------------------------------- [QUADRANT C] ------------------------------------------------------------------------------- [QUADRANT D] --------------------------------------+");
 						isSeparatorPrinted= true;
 					}
 				}
